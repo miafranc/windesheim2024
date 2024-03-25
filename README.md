@@ -12,10 +12,8 @@ Although it is possible to use Windows as well, we strongly encourage the partic
 - Pull image (~ 1 GB):
 `docker pull zalanbodo/ubuntu_w_python`
 - Run image:
-`docker run -it -v "[path to local files]:/home" ubuntu_w_python /bin/sh`
+```docker run -it -v "[path to local files]:/home" ubuntu_w_python /bin/sh```
 - or create + run:
-```
-docker create -it --name some_name -v "path_to_local_files":"/home" ubuntu_w_python
+```docker create -it --name some_name -v "path_to_local_files":"/home" ubuntu_w_python
 docker start some_name
-docker attach some_name
-```
+docker attach some_name```
