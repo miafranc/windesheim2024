@@ -9,7 +9,7 @@ Although it is possible to use Windows as well, we strongly encourage the partic
 
 ### Using Docker (https://www.docker.com/):
 - Install docker
-- Pull image (~ 1 GB):
+- Pull image (~ 1.5 GB compressed):
 `docker pull zalanbodo/ubuntu_w_python`
 - Run image:
 ```
