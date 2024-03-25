@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score
 def build_model(X_train):
     model = models.Sequential()
 
-    model.add(layers.Input(shape=(X_train.shape[1])))
+    model.add(layers.Input(shape=(X_train.shape[1],)))
     model.add(layers.Dense(1))
     model.add(layers.Activation(activation='sigmoid'))
     

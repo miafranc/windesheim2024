@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score
 def build_model(X_train):
     model = models.Sequential()
 
-    model.add(layers.Input(shape=(X_train.shape[1])))
+    model.add(layers.Input(shape=(X_train.shape[1],)))
     model.add(layers.Dense(1))
     # L_in = layers.Input(shape=(X_train.shape[1]))
     # L_out = layers.Dense(1)(L_in)
@@ -22,6 +22,7 @@ def build_model(X_train):
 
 def run_experiment():
     X_train, X_test, y_train, y_test = load_heart()
+
     # X_train, X_test, y_train, y_test = load_optdigits()
 
     model = build_model(X_train)
