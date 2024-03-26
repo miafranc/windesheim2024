@@ -21,3 +21,4 @@ docker create -it --name some_name -v "path_to_local_files":"/home" ubuntu_w_pyt
 docker start some_name
 docker attach some_name
 ```
+- or use it from a code editor / IDE like VS Code
