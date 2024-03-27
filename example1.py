@@ -31,7 +31,7 @@ def run_experiment():
     
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     model.fit(X_train, y_train, epochs=10)
-    y_pred = (model.predict(X_test) > 0.5)
+    y_pred = (model.predict(X_test) > 0)
     
     print(accuracy_score(y_test, y_pred))
 
