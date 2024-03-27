@@ -14,7 +14,8 @@ def build_model(X_train):
 
     model.add(layers.Input(shape=(X_train.shape[1],)))
     model.add(layers.Dense(1))
-    # L_in = layers.Input(shape=(X_train.shape[1]))
+
+    # L_in = layers.Input(shape=(X_train.shape[1],))
     # L_out = layers.Dense(1)(L_in)
     # model = keras.Model(inputs=[L_in], outputs=[L_out])
     
@@ -29,8 +30,8 @@ def run_experiment():
 
     print(model.summary())
     
-    model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-    model.fit(X_train, y_train, epochs=10)
+    model.compile(optimizer='adam', loss=keras.losses.BinaryCrossentropy(from_logits=True), metrics=['accuracy'])
+    model.fit(X_train, y_train, epochs=100)
     y_pred = (model.predict(X_test) > 0)
     
     print(accuracy_score(y_test, y_pred))
