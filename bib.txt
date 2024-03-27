@@ -1,0 +1,23 @@
+Good starting points:
+---------------------
+Machine learning with scikit-learn:
+	https://scikit-learn.org/stable/user_guide.html
+
+Keras code examples:
+	https://keras.io/examples/
+
+Book on DL:
+-----------
+Ian Goodfellow, Yoshua Bengio, Aaron Courville. Deep Learning. MIT Press, 2016.
+	https://www.deeplearningbook.org/
+
+Andriy Burkov. The Hundred-Page Machine Learning Book
+	https://themlbook.com/
+
+Tutorials:
+----------
+An Ultimate Tutorial to Neural Networks
+	https://www.simplilearn.com/tutorials/deep-learning-tutorial/neural-network
+
+Your First Deep Learning Project in Python with Keras Step-by-Step
+	https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
